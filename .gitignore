@@ -1,3 +1,11 @@
 # .gitignore
+venv/
 .env
 data/generator
+
+# IDE settings
+.idea/
+
+# Compiled files
+__pycache__/
+*.pyc
