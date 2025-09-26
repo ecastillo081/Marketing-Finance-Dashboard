@@ -52,9 +52,9 @@ SELECT
     new_customers * retention_rate AS active_customers,
     new_customers * retention_rate * arpu AS revenue,
     new_customers * retention_rate * arpu * refund_rate_pct AS refunds,
-    (new_customers * retention_rate * arpu)
-    - new_customers * retention_rate * arpu * (1 - refund_rate_pct) AS cogs,
     new_customers * retention_rate * arpu * (1 - refund_rate_pct) AS net_revenue,
+    (new_customers * retention_rate * arpu * (1 - refund_rate_pct))
+    - (new_customers * retention_rate * arpu * (1 - refund_rate_pct) * gross_margin_pct) as cogs,    
     new_customers * retention_rate * arpu * (1 - refund_rate_pct) * gross_margin_pct AS gross_profit,
     new_customers * retention_rate * arpu * (1 - refund_rate_pct) * payment_processing_fee_pct AS payment_fees,
     new_customers * retention_rate * variable_cost_per_order AS variable_costs,
