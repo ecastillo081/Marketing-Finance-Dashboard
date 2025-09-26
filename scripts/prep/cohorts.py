@@ -14,10 +14,10 @@ SELECT
     channel,
     campaign_id,
     ad_id,
-    spend_usd,
+    spend,
     new_customers,
     conversions,
-    conversion_value_usd
+    conversion_value
 FROM raw.google_ads_daily
 UNION ALL
 SELECT
@@ -25,10 +25,10 @@ SELECT
     channel,
     campaign_id,
     ad_id,
-    spend_usd,
+    spend,
     new_customers,
     purchases as conversions,
-    purchase_value_usd as conversion_value_usd
+    purchase_value as conversion_value
 FROM raw.meta_ads_daily
 """
 
@@ -46,7 +46,7 @@ WITH new_customers AS (
         date_trunc('month', date) AS cohort,
         channel,
         SUM(new_customers) AS new_customers,
-        SUM(spend_usd) AS spend
+        SUM(spend) AS spend
     FROM stg.ads_daily
     GROUP BY cohort, channel
     ORDER BY cohort, channel

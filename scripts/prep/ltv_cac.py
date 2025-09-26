@@ -35,7 +35,8 @@ ltv AS (
         SUM(cm_per_customer) AS ltv_per_customer
     FROM cumulative_cm
     GROUP BY cohort, channel
-)
+),
+ltv_cac as (
 select
     l.cohort,
     l.channel,
@@ -44,11 +45,25 @@ select
     case when cac > 0 then l.ltv_per_customer / f.cac 
     else null 
     end as ltv_to_cac,
-    p.payback_month
+    p.payback_month,
+    -- priority score ranks the best channels to invest in: (LTV/CAC - 1)
+    case 
+        when cac is null or cac <= 0 then null 
+        when payback_month is null or payback_month <= 0 then null
+    else ((ltv_per_customer / cac) - 1) / payback_month
+    end as priority_score
 FROM ltv as l
 JOIN (select distinct cohort, channel, cac FROM stg.finance_metrics) as f USING(cohort, channel)
 LEFT JOIN payback_period as p USING(cohort, channel)
 ORDER BY l.cohort, l.channel
+)
+
+SELECT
+    *,
+    RANK() OVER (PARTITION BY cohort ORDER BY priority_score DESC NULLS LAST) AS channel_rank
+FROM ltv_cac
+ORDER BY cohort, channel
+
 """
 
 # run sql
