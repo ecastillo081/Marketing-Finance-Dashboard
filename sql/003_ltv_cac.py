@@ -17,7 +17,7 @@ WITH cumulative_cm AS (
         cac,
         SUM(cm_per_customer) OVER (PARTITION BY cohort, channel ORDER BY month_index
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS cum_cm_per_customer
-    FROM stg.finance_metrics
+    FROM stg.monthly_cohorts
 ),
 payback_period AS (
     SELECT DISTINCT ON (cohort, channel)
@@ -53,7 +53,7 @@ select
     else ((ltv_per_customer / cac) - 1) / payback_month
     end as priority_score
 FROM ltv as l
-JOIN (select distinct cohort, channel, cac FROM stg.finance_metrics) as f USING(cohort, channel)
+JOIN (select distinct cohort, channel, cac FROM stg.monthly_cohorts) as f USING(cohort, channel)
 LEFT JOIN payback_period as p USING(cohort, channel)
 ORDER BY l.cohort, l.channel
 )
