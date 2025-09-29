@@ -7,10 +7,10 @@ engine = create_engine(connection_string)
 
 # SQL code to create data dictionary table
 sql_code = """
-DROP VIEW stg.return_on_ad_spend;
+DROP VIEW stg.channel_campaign_monthly_pnl;
 DROP VIEW stg.ltv_cac;
-DROP VIEW stg.finance_metrics;
 DROP VIEW stg.monthly_cohorts;
+DROP VIEW stg.monthly_channel_summary;
 DROP VIEW stg.ads_daily;
 """
 # DROP VIEW stg.monthly_cohorts;
