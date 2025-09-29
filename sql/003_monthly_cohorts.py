@@ -71,7 +71,9 @@ FROM finance_assumptions_extended
 )
 
 SELECT
-    *
+    *,
+    SUM(cm_per_customer) OVER (PARTITION BY cohort, channel ORDER BY month_index
+    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS cum_cm_per_customer_cohort
 FROM finance_metrics
 ORDER BY cohort, channel, month_index
 """
