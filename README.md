@@ -1,4 +1,4 @@
-# Marketing → Finance Analytics Pipeline
+# Marketing & Finance Analytics Pipeline
 
 ## Overview
 This project translates Google Ads + Meta Ads marketing data into finance KPIs:
