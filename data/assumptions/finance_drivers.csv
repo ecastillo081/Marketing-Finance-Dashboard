@@ -1,0 +1,5 @@
+channel,gross_margin_pct,variable_cost_per_order,payment_processing_fee_pct,refund_rate_pct
+DEFAULT,0.62,6.5,0.029,0.04
+Google Ads - Search,0.6,7.0,0.029,0.05
+Google Ads - YouTube,0.64,6.0,0.029,0.03
+Meta Ads,0.61,6.75,0.029,0.045
