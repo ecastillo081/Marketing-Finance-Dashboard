@@ -1,0 +1,101 @@
+date,customer_id,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,ad_name,network,device,channel,currency,impressions,clicks,spend,conversions,conversion_value,new_customers,repeat_orders,conversion_action
+2020-01-26,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_001,Brand Exact,gad_002,RSAs v2,YOUTUBE,MOBILE,Google Ads - YouTube,USD,104033,1092,2932.64,71,4003.65,31,1,purchase
+2020-02-23,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,57543,2309,4595.53,86,4357.45,58,17,purchase
+2020-04-10,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,31477,356,1324.95,50,6028.32,29,6,purchase
+2020-05-15,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,SEARCH,MOBILE,Google Ads - Search,USD,72767,3230,16483.66,428,67361.77,230,100,purchase
+2020-06-16,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,3843,137,563.63,10,1422.06,3,6,purchase
+2020-06-21,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_002,RSAs v2,SEARCH,MOBILE,Google Ads - Search,USD,79752,2985,10266.4,197,32542.51,71,31,purchase
+2020-06-24,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,85791,1535,2677.72,63,6147.27,20,17,purchase
+2020-07-03,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,57800,943,1235.63,95,15269.44,61,25,purchase
+2020-07-25,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,39265,886,1781.77,41,6680.99,22,4,purchase
+2020-08-16,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,20758,210,503.38,21,3206.83,12,0,purchase
+2020-08-20,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,1302,12,18.68,1,91.65,0,0,purchase
+2020-08-31,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,MOBILE,Google Ads - YouTube,USD,104691,1001,2894.22,137,9235.27,94,6,purchase
+2020-09-03,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,YOUTUBE,MOBILE,Google Ads - YouTube,USD,22357,275,587.76,28,1999.14,17,10,purchase
+2020-09-19,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,21150,333,770.14,11,1829.93,4,5,purchase
+2020-10-13,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,9935,383,1752.36,45,6983.58,16,18,purchase
+2020-10-22,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,49354,460,1302.89,67,5343.18,25,36,purchase
+2020-12-13,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,84460,990,844.51,94,15118.9,39,44,purchase
+2020-12-17,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,28516,403,1372.63,30,4568.86,15,2,purchase
+2021-01-04,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,MOBILE,Google Ads - Search,USD,59994,1009,585.22,66,8090.84,31,31,purchase
+2021-02-27,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,76203,2660,6163.0,376,15436.61,156,118,purchase
+2021-03-03,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,MOBILE,Google Ads - Search,USD,45945,2641,11861.94,263,25919.71,143,96,purchase
+2021-03-13,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,106647,1322,1361.96,98,7435.16,34,57,purchase
+2021-03-21,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,14403,184,262.7,19,1632.89,7,3,purchase
+2021-04-16,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,37586,483,558.53,43,4489.92,19,2,purchase
+2021-05-12,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,38994,1125,803.58,112,9757.17,54,13,purchase
+2021-05-14,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_001,Brand Exact,gad_003,YT Video v3,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,103795,891,1856.0,104,15685.39,63,17,purchase
+2021-06-16,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,69366,3819,2864.08,215,37207.39,81,109,purchase
+2021-06-17,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,76713,4242,12255.85,277,36097.11,140,117,purchase
+2021-07-12,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,91272,301,476.45,13,1186.97,6,0,purchase
+2021-08-02,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,43918,688,1261.4,99,9155.71,31,34,purchase
+2021-08-15,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,MOBILE,Google Ads - Search,USD,25789,1426,1585.12,119,4949.15,64,22,purchase
+2021-11-03,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,66735,3513,7445.69,246,39153.15,90,34,purchase
+2021-11-06,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,36909,555,859.51,38,5271.05,12,3,purchase
+2021-11-12,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,62813,1053,3121.48,41,5050.31,27,4,purchase
+2021-12-15,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,62529,600,505.38,32,2894.35,21,10,purchase
+2021-12-27,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,55623,1833,10796.7,154,13247.88,95,19,purchase
+2022-02-23,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,70172,1337,3448.14,69,7112.26,29,20,purchase
+2022-03-09,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,79959,842,4613.82,26,2202.3,8,12,purchase
+2022-03-25,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,30124,333,157.82,27,2869.72,15,4,purchase
+2022-05-15,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,109211,399,418.61,35,3000.59,16,18,purchase
+2022-06-08,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,14897,518,1369.02,30,1619.94,10,19,purchase
+2022-07-02,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,SEARCH,MOBILE,Google Ads - Search,USD,74166,1660,4080.03,196,8234.96,97,24,purchase
+2022-07-06,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,YOUTUBE,MOBILE,Google Ads - YouTube,USD,110779,1224,1461.81,127,13606.97,39,43,purchase
+2022-08-22,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,SEARCH,MOBILE,Google Ads - Search,USD,5740,254,841.78,10,928.2,6,1,purchase
+2022-09-09,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,46043,1883,4650.81,65,8711.32,26,11,purchase
+2022-09-11,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,MOBILE,Google Ads - Search,USD,61889,902,918.11,54,9565.1,30,0,purchase
+2022-09-20,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,46525,349,308.23,51,4846.72,21,18,purchase
+2022-09-22,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,50948,1048,2411.69,37,6092.93,18,9,purchase
+2022-09-23,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,11229,604,2762.83,66,9130.95,34,1,purchase
+2022-10-19,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,12314,45,30.29,2,129.56,0,0,purchase
+2022-11-15,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,106891,1080,3141.96,98,9730.02,67,28,purchase
+2022-12-03,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,112276,2188,702.01,297,33821.81,181,27,purchase
+2022-12-07,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_001,Brand Exact,gad_002,RSAs v2,YOUTUBE,MOBILE,Google Ads - YouTube,USD,95476,1860,4093.61,47,4504.24,31,2,purchase
+2023-02-03,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,5432,41,100.75,4,263.33,2,0,purchase
+2023-02-08,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,37131,759,3181.19,50,3779.15,26,23,purchase
+2023-02-22,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,5335,316,1371.41,28,2333.35,18,2,purchase
+2023-04-01,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,4658,138,698.34,12,586.7,4,5,purchase
+2023-04-04,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,6122,111,181.23,9,495.04,3,4,purchase
+2023-04-18,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,28751,1357,2550.8,59,3028.01,18,9,purchase
+2023-06-12,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,1650,73,200.69,3,185.7,1,1,purchase
+2023-07-04,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,SEARCH,MOBILE,Google Ads - Search,USD,46675,1748,7744.13,184,14571.1,83,37,purchase
+2023-07-10,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_001,RSAs v1,SEARCH,MOBILE,Google Ads - Search,USD,21947,652,708.83,41,2613.96,16,15,purchase
+2023-07-15,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,45247,689,258.07,27,1583.18,17,6,purchase
+2023-07-18,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_001,Brand Exact,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,72869,2817,3399.42,353,54676.0,156,105,purchase
+2023-07-24,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,40790,463,345.71,52,4124.02,21,2,purchase
+2023-07-29,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,27692,434,2439.13,63,11304.11,32,25,purchase
+2023-08-09,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,74463,2833,15076.08,205,12046.24,73,42,purchase
+2023-08-11,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,11147,620,2053.68,52,7891.59,32,3,purchase
+2023-09-26,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,58517,1978,10033.49,118,18206.69,38,3,purchase
+2023-10-01,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,12683,666,3760.23,81,10826.33,56,14,purchase
+2023-10-22,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,62642,1166,1059.16,128,6471.79,77,34,purchase
+2023-11-12,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,63752,694,1401.44,18,3111.85,6,0,purchase
+2023-12-08,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,117868,1949,2896.55,252,37207.42,76,90,purchase
+2024-01-02,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,18884,693,3204.78,96,11704.41,60,8,purchase
+2024-01-25,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_001,Brand Exact,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,58835,2151,7471.48,221,31305.27,128,60,purchase
+2024-01-28,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,76880,772,745.4,21,3382.28,12,1,purchase
+2024-02-08,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,83637,1213,1881.43,102,5269.3,62,27,purchase
+2024-03-03,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,7371,89,164.04,10,1004.32,3,2,purchase
+2024-04-10,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_001,RSAs v1,SEARCH,MOBILE,Google Ads - Search,USD,72226,2995,12958.22,236,30174.52,104,123,purchase
+2024-04-16,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,84285,1417,4041.7,209,30403.85,72,18,purchase
+2024-05-04,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,20008,471,2735.98,37,5841.68,23,4,purchase
+2024-05-15,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,61160,744,1573.63,74,12738.72,40,3,purchase
+2024-05-24,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,25851,756,3212.15,48,3671.87,20,25,purchase
+2024-05-31,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,109464,1265,2698.38,31,4709.44,10,18,purchase
+2024-06-06,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,MOBILE,Google Ads - YouTube,USD,98379,370,462.1,37,4086.25,15,5,purchase
+2024-06-14,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,53421,1983,4116.66,191,8455.58,82,71,purchase
+2024-06-26,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_002,NonBrand Broad,gad_003,YT Video v3,SEARCH,MOBILE,Google Ads - Search,USD,72774,2105,4959.29,288,36016.63,170,96,purchase
+2024-06-30,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,MOBILE,Google Ads - Search,USD,66010,2576,13573.31,239,17543.45,132,59,purchase
+2024-07-08,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,27141,1027,5801.37,113,13538.37,74,20,purchase
+2024-07-10,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,20858,331,1433.91,33,5373.92,16,4,purchase
+2024-07-16,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_001,RSAs v1,SEARCH,DESKTOP,Google Ads - Search,USD,7441,280,280.14,32,3732.56,11,1,purchase
+2024-07-20,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_002,NonBrand Broad,gad_002,RSAs v2,YOUTUBE,MOBILE,Google Ads - YouTube,USD,36735,614,1825.68,45,4143.71,26,17,purchase
+2024-09-03,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,81719,456,268.45,47,3076.77,28,17,purchase
+2024-09-12,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,2868,38,101.93,1,164.13,0,0,purchase
+2024-09-19,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,33135,356,1995.65,26,4558.62,15,3,purchase
+2024-09-21,123-456-7890,gcmp_2025_101,Search - Brand - US,ggrp_001,Brand Exact,gad_003,YT Video v3,SEARCH,DESKTOP,Google Ads - Search,USD,74244,4434,13677.54,249,40758.6,123,44,purchase
+2024-10-30,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_002,RSAs v2,SEARCH,DESKTOP,Google Ads - Search,USD,41740,2288,7108.33,244,15646.45,124,87,purchase
+2024-11-20,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_003,YT Video v3,YOUTUBE,MOBILE,Google Ads - YouTube,USD,47214,720,765.05,65,7230.21,30,31,purchase
+2024-11-28,123-456-7890,gcmp_2025_102,Search - NonBrand - US,ggrp_001,Brand Exact,gad_001,RSAs v1,YOUTUBE,DESKTOP,Google Ads - YouTube,USD,22677,338,136.46,42,5832.7,13,25,purchase
+2024-12-24,123-456-7890,gcmp_2025_201,YouTube - Awareness,ggrp_003,YT In-Stream Skippable,gad_001,RSAs v1,SEARCH,MOBILE,Google Ads - Search,USD,35174,778,1541.09,53,2268.93,18,27,purchase
