@@ -26,4 +26,4 @@ This project translates Google Ads + Meta Ads marketing data into finance KPIs:
 **Meta & YouTube drive faster ROI**
 * Google YouTube cohorts reach payback in ~4 months with LTV/CAC ~4.3×, generating the strongest near-term ROI.
 * Google Search shows slower payback (~28 months) and lower LTV/CAC ~1.7×, suggesting budget reallocation.
-* Google Search shows slower payback (~28 months) and lower LTV/CAC ~1.7×, suggesting budget reallocation.
+* **Recommendation**: Shift 10–15% of spend from Search into Meta and YouTube, which together deliver faster returns.
