@@ -13,26 +13,39 @@ This project translates Google Ads + Meta Ads marketing data into finance KPIs:
 ---
 
 ## Data Flow
-```mermaid
-  Raw: Daily Ad Data (Google + Meta) 
-  Raw --> A[001_consolidated_ads_daily]
-  A   --> B[002_monthly_channel_summary]
-  B   --> C[003_monthly_cohorts]
-  C   --> D[004_ltv_cac]
-  D   --> E[005_channel_campaign_monthly_pnl]
-  E   --> F[Final Dashboards & Reports]
-```  
 
-## Data Flow
-```mermaid
-graph TD
-  Raw[Daily Ad Data (Google + Meta)] --> A[001_consolidated_ads_daily]
-  A --> B[002_monthly_channel_summary]
-  B --> C[003_monthly_cohorts]
-  C --> D[004_ltv_cac]
-  D --> E[005_channel_campaign_monthly_pnl]
-  E --> F[Final Dashboards & Reports]
-```
+**Pipeline Overview**
+
+1. **Raw Data Sources**
+   - Google Ads (Search, YouTube)
+   - Meta Ads (Facebook, Instagram)
+
+2. **001_consolidated_ads_daily**
+   - Combines Google + Meta into a unified daily table  
+   - Standardizes columns: `date`, `channel`, `campaign_id`, `ad_id`, `spend`, `new_customers`, `conversions`, `conversion_value`
+
+3. **002_monthly_channel_summary**
+   - Aggregates daily spend & new customers by cohort month and channel  
+   - Calculates **Customer Acquisition Cost (CAC)** = `spend / new_customers`
+
+4. **003_monthly_cohorts**
+   - Joins retention and ARPU templates  
+   - Calculates **active customers**, **revenue**, **COGS**, **gross profit**, and **contribution margin**
+
+5. **004_ltv_cac**
+   - Summarizes cumulative contribution margin to derive **LTV per customer**  
+   - Calculates **LTV/CAC** and **Payback Month** for each channel
+
+6. **005_channel_campaign_monthly_pnl**
+   - Campaign-level monthly P&L  
+   - Includes **spend**, **ROAS**, **CAC_campaign**, **LTV per customer**, **LTV dollars**, and **Net Value Created**
+
+7. **Final Dashboards & Reports**
+   - Mode Analytics dashboard visualizing key metrics:
+     - **LTV/CAC by Channel**
+     - **Cohort Payback Curve**
+
+---
 
 ## Findings
 **Meta & YouTube drive faster ROI**
