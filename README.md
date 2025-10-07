@@ -54,4 +54,4 @@ This project translates Google Ads + Meta Ads marketing data into finance KPIs:
 * **Recommendation**: Shift 10–15% of spend from Search into Meta and YouTube, which together deliver faster returns.
 
 ## Mode Report
-📄 [Download Dashboard PDF](reports/Marketing Finance Dashboard.pdf)
+📄 [Download Dashboard PDF](reports/Marketing_Finance_Dashboard.pdf)
