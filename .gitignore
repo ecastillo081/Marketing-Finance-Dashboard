@@ -1,11 +1,40 @@
-# .gitignore
-venv/
+# Environment / secrets
 .env
+.env.*
+*.env
+
+# Local generator (not part of the public runtime)
 data/generator
 
-# IDE settings
-.idea/
+# Virtual environments
+venv/
+.venv/
+env/
 
-# Compiled files
+# IDE
+.idea/
+.vscode/
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Local DuckDB warehouse
+warehouse/*.duckdb
+warehouse/*.duckdb.wal
+warehouse/*.db
+!warehouse/.gitkeep
+
+# Generated analytical outputs (rebuild with python build.py)
+outputs/*.csv
+outputs/charts/*.png
+!outputs/.gitkeep
+!outputs/charts/.gitkeep
+
+# Temporary QA / render artifacts
+case-study/_qa*
+case-study/qa/
+*_qa*.png
+*_qa*.txt

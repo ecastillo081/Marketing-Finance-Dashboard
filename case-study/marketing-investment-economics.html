@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Marketing Investment Economics</title>
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+  <section class="page">
+    <div class="kicker">GTM / Marketing Finance case study</div>
+    <h1>Marketing Investment Economics</h1>
+    <p class="subtitle">Evaluating acquisition efficiency, contribution payback, and capital-allocation risk</p>
+    <div class="meta-row">
+      <span>Efrain Castillo</span>
+      <span class="badge">Self-directed portfolio project using synthetic data</span>
+    </div>
+    <div class="question">
+      <strong>Business question.</strong>
+      How should Finance evaluate where to test incremental marketing investment when channel acquisition
+      costs, attributed returns, and modeled customer economics differ?
+    </div>
+    <h2>Acquisition efficiency varies materially across channels</h2>
+    <div class="cards">
+      
+        <article class="card">
+          <div class="name">Meta Ads</div>
+          <div class="stat">$2,836,272.12 <span>90.1% of spend</span></div>
+          <dl>
+            <dt>Attributed new cust. proxy</dt><dd>59,402</dd>
+            <dt>Blended CAC</dt><dd>$47.75</dd>
+            <dt>Platform-attributed ROAS</dt><dd>2.40x</dd>
+          </dl>
+        </article>
+      
+        <article class="card">
+          <div class="name">Google Ads - Search</div>
+          <div class="stat">$251,539.45 <span>8.0% of spend</span></div>
+          <dl>
+            <dt>Attributed new cust. proxy</dt><dd>3,180</dd>
+            <dt>Blended CAC</dt><dd>$79.10</dd>
+            <dt>Platform-attributed ROAS</dt><dd>2.94x</dd>
+          </dl>
+        </article>
+      
+        <article class="card">
+          <div class="name">Google Ads - YouTube</div>
+          <div class="stat">$58,598.69 <span>1.9% of spend</span></div>
+          <dl>
+            <dt>Attributed new cust. proxy</dt><dd>1,435</dd>
+            <dt>Blended CAC</dt><dd>$40.84</dd>
+            <dt>Platform-attributed ROAS</dt><dd>5.63x</dd>
+          </dl>
+        </article>
+    </div>
+    <div class="charts-3">
+      <img src="charts/spend_mix.png" alt="Channel spend mix" />
+      <img src="charts/blended_cac.png" alt="Blended CAC by channel" />
+      <img src="charts/attributed_roas.png" alt="Platform-attributed ROAS by channel" />
+    </div>
+    <p class="source">Source: validated local DuckDB build · synthetic fixtures · platform-attributed ROAS is not incremental return.</p>
+    <div class="split">
+      <div class="box">
+        <h3>Synthetic observed fixture</h3>
+        <ul>
+          <li>Spend, attributed new-customer proxy</li>
+          <li>Platform conversions / purchases</li>
+          <li>Platform-attributed conversion value</li>
+          <li>Blended CAC and platform-attributed ROAS</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Modeled assumptions / outputs</h3>
+        <ul>
+          <li>Shared retention curve and $50 ARPU</li>
+          <li>Gross margin, refunds, fees, variable cost</li>
+          <li>Contribution margin, lifetime contribution, payback</li>
+          <li>Weighted lifetime contribution / CAC</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      Portfolio fixture spend is $3,146,410.26 across 64,017 attributed new customers.
+      Meta is 90.1% of spend. YouTube has the lowest blended CAC ($40.84);
+      Search has the highest ($79.10). Platform-attributed ROAS is not profit and is not incremental return.
+      These metrics identify differences in <strong>average acquisition efficiency</strong>, not marginal return on the next dollar.
+    </div>
+    <div class="footer">
+      <span>Efrain Castillo · Self-directed portfolio project · Synthetic data</span>
+      <span>1 / 3</span>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">Contribution economics</div>
+    <h2>Contribution economics widen the channel differences</h2>
+    <p>
+      Lifetime figures are <strong>forward modeled</strong> over 38 months. They are not realized historical cohort performance.
+      Retention and ARPU are shared assumptions; channel differences in modeled contribution also reflect finance-driver assumptions.
+    </p>
+    <div class="assumptions">
+      <div><span class="lbl">ARPU</span><strong>$50 / month</strong> (flat)</div>
+      <div><span class="lbl">Horizon</span><strong>38 months</strong> for every cohort</div>
+      <div><span class="lbl">Retention</span><strong>Shared curve</strong> · 1.00 to 0.01</div>
+      <div><span class="lbl">Finance drivers</span><strong>Channel-specific</strong> GM / refund / VC</div>
+    </div>
+    <div class="charts-2">
+      <img src="charts/weighted_cm_cac.png" alt="Weighted modeled lifetime contribution over CAC" />
+      <img src="charts/payback.png" alt="Modeled payback month" />
+    </div>
+    <p class="source">Source: validated local build · weighted = (customers x modeled CM per customer) / spend · payback month 0 = acquisition month.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Channel</th>
+          <th>Modeled lifetime CM / customer</th>
+          <th>Weighted CM / CAC</th>
+          <th>Modeled payback month</th>
+          <th>Cohorts not paying back</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>YouTube</td>
+          <td>$133.41</td>
+          <td>3.267x</td>
+          <td>2</td>
+          <td>2 / 36</td>
+        </tr>
+        <tr>
+          <td>Meta</td>
+          <td>$118.50</td>
+          <td>2.482x</td>
+          <td>4</td>
+          <td>4 / 52</td>
+        </tr>
+        <tr>
+          <td>Search</td>
+          <td>$113.59</td>
+          <td>1.436x</td>
+          <td>13</td>
+          <td>12 / 35</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      YouTube's strongest modeled economics combine low blended CAC with slightly better assumed contribution
+      (higher GM, lower refunds and variable cost). Meta combines the greatest fixture scale with stronger modeled
+      economics than Search. Search has the thinnest modeled cushion: 1.436x
+      and payback month 13, with
+      12 of 35 acquisition cohorts not paying back
+      within 38 months. Average modeled economics do not establish that additional spend can be placed at the same CAC.
+    </div>
+    <div class="footer">
+      <span>Python · DuckDB · SQL · pandas · matplotlib</span>
+      <span>2 / 3</span>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">Capital allocation under uncertainty</div>
+    <h2>Average economics identify test priorities, not automatic budget shifts</h2>
+    <p>
+      Downside cases recompute the contribution waterfall. They do not apply cosmetic percentages to the ratio.
+      There is no marginal-response curve in this fixture, so a “move spend and keep the same return” scenario is not valid.
+    </p>
+    <div class="chart-wide">
+      <img src="charts/sensitivity_cm_cac.png" alt="Sensitivity matrix of weighted modeled lifetime contribution over CAC" />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>Meta (CM/CAC · payback)</th>
+          <th>Search (CM/CAC · payback)</th>
+          <th>YouTube (CM/CAC · payback)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th>Baseline</th><td>2.48x · m4</td><td>1.44x · m13</td><td>3.27x · m2</td></tr>
+<tr><th>CAC +20%</th><td>2.07x · m6</td><td>1.20x · m20</td><td>2.72x · m3</td></tr>
+<tr><th>ARPU -20%</th><td>1.83x · m8</td><td>1.05x · m29</td><td>2.45x · m4</td></tr>
+<tr><th>Retention downside</th><td>2.07x · m5</td><td>1.20x · m19</td><td>2.73x · m3</td></tr>
+<tr><th>Gross margin -5 pp</th><td>2.20x · m5</td><td>1.27x · m17</td><td>2.93x · m3</td></tr>
+
+      </tbody>
+    </table>
+    <p class="note">
+      Search is the most fragile: under ARPU -20% weighted CM/CAC falls to 1.05x
+      (payback month 29).
+      CAC +20% leaves Search at 1.20x.
+      YouTube remains above 2.45x even with ARPU -20%, but is only 1.9% of fixture spend.
+      Meta stays above 1.83x in that case while already representing 90.1% of spend.
+    </p>
+    <div class="split">
+      <div class="box">
+        <h3>What Finance can say now</h3>
+        <ul>
+          <li>Search has the least downside cushion in the modeled economics.</li>
+          <li>YouTube warrants incremental testing because baseline modeled economics are strongest — not because scale is proven.</li>
+          <li>Meta warrants continued scrutiny because it is already 90.1% of fixture spend.</li>
+          <li>Assumption sensitivity materially changes investment attractiveness, especially for Search.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>What Finance needs before scaling</h3>
+        <ul>
+          <li>Marginal CAC and spend capacity / saturation</li>
+          <li>Incremental contribution, not only platform-attributed ROAS</li>
+          <li>Attribution overlap and cannibalization</li>
+          <li>Realized retention, ARPU, and customer quality by channel</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Management actions</h3>
+    <ol class="actions">
+      <li>Set channel investment guardrails using contribution-margin payback and downside cases, not ROAS alone.</li>
+      <li>Prioritize incremental testing where average modeled economics are strongest, while explicitly testing marginal CAC and capacity.</li>
+      <li>Investigate Search cohorts that do not pay back within the 38-month modeled horizon before adding spend.</li>
+      <li>Replace shared ARPU/retention assumptions with observed channel and customer-quality data when enough history exists.</li>
+    </ol>
+    <p class="limits">
+      <strong>Limitations.</strong> Synthetic ad fixtures; sparse sampled dates, not a continuous daily panel; platform attribution is not causal incrementality;
+      ARPU and retention are modeled; 38-month forward horizon; Google campaign taxonomy is fixture-limited; no marginal-response or saturation data.
+    </p>
+    <div class="footer">
+      <span>Efrain Castillo · <a href="https://github.com/ecastillo081/Marketing-Finance-Dashboard">github.com/ecastillo081/Marketing-Finance-Dashboard</a></span>
+      <span>3 / 3</span>
+    </div>
+  </section>
+</body>
+</html>
